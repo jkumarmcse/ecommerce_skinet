@@ -25,7 +25,7 @@ namespace API.Controllers
             var UpdateBasket = await _basketRepository.UpdateBasketAsync(basket);
             return Ok(UpdateBasket);
         }
-
+        [HttpDelete]
         public async Task DeleteBasketAsync(string id)
         {
             await _basketRepository.DeleteBasketAsync(id);
